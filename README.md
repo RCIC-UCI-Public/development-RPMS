@@ -1,6 +1,12 @@
 # development-RPMS
-RPMS for development - small in size
-These can be downloaded and then installed on a vanilla CentOS 7 system
+RPMS for needed to build other RPMS that are created with yaml2rpm
+
+Generic system Preparation:  The following needs to be done on your build system
+```
+yum install wget git rpm-build
+```
+
+The following RPMS are needed to be able to build on a vanilla CentOS 7 system
 You only need to prep a build system once with these RPMS.
 
 ```
@@ -9,6 +15,7 @@ wget https://github.com/RCIC-UCI-Public/development-RPMS/blob/master/yaml2rpm-1.
 wget https://github.com/RCIC-UCI-Public/development-RPMS/blob/master/rcic-module-support-1.0-1.x86_64.rpm?raw=true -O rcic-module-support-1.0-1.x86_64.rpm
 yum install rocks-devel*rpm yaml2rpm*rpm rcic-module-support*rpm
 . /etc/profile.d/yaml2rpm.sh
+. /etc/profile.d/rocks-devel.sh
 ```
 
 You can then download yaml2rpm based repos and build according to their local 
