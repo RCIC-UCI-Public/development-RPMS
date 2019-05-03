@@ -16,6 +16,7 @@ wget https://github.com/RCIC-UCI-Public/development-RPMS/blob/master/rcic-module
 yum install rocks-devel*rpm yaml2rpm*rpm rcic-module-support*rpm
 . /etc/profile.d/yaml2rpm.sh
 . /etc/profile.d/rocks-devel.sh
+. /etc/profile.d/modules.sh
 ```
 
 You can then download yaml2rpm based repos and build according to their local 
