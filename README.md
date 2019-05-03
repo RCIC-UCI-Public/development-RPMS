@@ -1,9 +1,9 @@
 # development-RPMS
 RPMS for needed to build other RPMS that are created with yaml2rpm
 
-Generic system Preparation:  The following needs to be done on your build system
+Generic system Preparation:  The following needs to be done on your build system (CentOS base/updates)
 ```
-yum install wget git rpm-build
+yum install wget git rpm-build environment-modules
 ```
 
 The following RPMS are needed to be able to build on a vanilla CentOS 7 system
