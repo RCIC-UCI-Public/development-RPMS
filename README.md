@@ -10,10 +10,13 @@ The following RPMS are needed to be able to build on a vanilla CentOS 7 system
 You only need to prep a build system once with these RPMS.
 
 ```
-wget https://github.com/RCIC-UCI-Public/development-RPMS/blob/master/rocks-devel-7.1-10.x86_64.rpm?raw=true -O rocks-devel-7.1-10.x86_64.rpm
-wget https://github.com/RCIC-UCI-Public/development-RPMS/blob/master/yaml2rpm-1.3-1.x86_64.rpm?raw=true -O yaml2rpm-1.3-1.x86_64.rpm
-wget https://github.com/RCIC-UCI-Public/development-RPMS/blob/master/rcic-module-support-1.0-1.x86_64.rpm?raw=true -O rcic-module-support-1.0-1.x86_64.rpm
-yum install rocks-devel*rpm yaml2rpm*rpm rcic-module-support*rpm
+YAMLRPM_VERSION=1.4-1
+ROCKSDEVEL_VERSION=7.1-10
+RCICMODULE_VERSION=1.0-1
+wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/rocks-devel-${ROCKSDEVEL_VERSION}.x86_64.rpm
+wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/yaml2rpm-${YAMLRPM_VERSION}.x86_64.rpm
+wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/rcic-module-support-${RCICMODULE_VERSION}.x86_64.rpm
+yum -y install rocks-devel-${ROCKSDEVEL_VERSION}.x86_64.rpm yaml2rpm-${YAMLRPM_VERSION}.x86_64.rpm rcic-module-support-${RCIC_MODULE_VERSION}.x86_64.rpm zlib-devel redhat-lsb environment-modules
 . /etc/profile.d/yaml2rpm.sh
 . /etc/profile.d/rocks-devel.sh
 . /etc/profile.d/modules.sh
