@@ -11,7 +11,7 @@ You only need to prep a build system once with these RPMS.
    ```
    YAMLRPM_VERSION=1.8-2
    ROCKSDEVEL_VERSION=7.1-12
-   RCICMODULE_VERSION=1.0-1
+   RCICMODULE_VERSION=1.0-3
    RCICMODULEPATH_VERSION=1.0-2
    wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/rocks-devel-${ROCKSDEVEL_VERSION}.x86_64.rpm
    wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/yaml2rpm-${YAMLRPM_VERSION}.x86_64.rpm
