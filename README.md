@@ -9,7 +9,7 @@ yum install wget git rpm-build environment-modules
 The following RPMS are needed to be able to build on a vanilla CentOS 7 system
 You only need to prep a build system once with these RPMS.
    ```
-   YAMLRPM_VERSION=1.8-3
+   YAMLRPM_VERSION=1.8-4
    ROCKSDEVEL_VERSION=7.1-12
    RCICMODULE_VERSION=1.0-3
    RCICMODULEPATH_VERSION=1.0-2
