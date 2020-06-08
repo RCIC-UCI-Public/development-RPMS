@@ -8,17 +8,22 @@ yum install wget git rpm-build environment-modules
 
 The following RPMS are needed to be able to build on a vanilla CentOS 7 system
 You only need to prep a build system once with these RPMS.
+
    ```
-   YAMLRPM_VERSION=1.9-4
+   YAMLRPM_VERSION=1.9-12
    ROCKSDEVEL_VERSION=7.1-12
-   RCICMODULE_VERSION=1.1-1
-   RCICMODULEPATH_VERSION=1.0-4
+   RCICMODULE_VERSION=1.1-12
+   RCICMODULEPATH_VERSION=1.0-5
+   RUAMEL_VERSION=0.16.5-1
+   SETUPTOOLS_VERSION=41.0.0-1
 
    wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/rocks-devel-${ROCKSDEVEL_VERSION}.x86_64.rpm
    wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/yaml2rpm-${YAMLRPM_VERSION}.x86_64.rpm
    wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/rcic-module-support-${RCICMODULE_VERSION}.x86_64.rpm
    wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/rcic-module-path-${RCICMODULEPATH_VERSION}.x86_64.rpm
-   yum -y install rocks-devel-${ROCKSDEVEL_VERSION}.x86_64.rpm yaml2rpm-${YAMLRPM_VERSION}.x86_64.rpm rcic-module-support-${RCICMODULE_VERSION}.x86_64.rpm rcic-module-path-${RCICMODULEPATH_VERSION}.x86_64.rpm zlib-devel redhat-lsb environment-modules
+   wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/python-ruamel-yaml-${RUAMEL_VERSION}.x86_64.rpm
+   wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/python-setuptools-${SETUPTOOLS_VERSION}.x86_64.rpm
+   yum -y install rocks-devel-${ROCKSDEVEL_VERSION}.x86_64.rpm yaml2rpm-${YAMLRPM_VERSION}.x86_64.rpm rcic-module-support-${RCICMODULE_VERSION}.x86_64.rpm rcic-module-path-${RCICMODULEPATH_VERSION}.x86_64.rpm python-ruamel-yaml-${RUAMEL_VERSION}.x86_64.rpm python-setuptools-${SETUPTOOLS_VERSIONS}.noarch.rpm zlib-devel redhat-lsb environment-modules
    . /etc/profile.d/rocks-devel.sh
    . /etc/profile.d/yaml2rpm.sh
    . /etc/profile.d/rcic-modules.sh
