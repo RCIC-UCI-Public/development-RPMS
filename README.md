@@ -10,9 +10,9 @@ The following RPMS are needed to be able to build on a vanilla CentOS 7 system
 You only need to prep a build system once with these RPMS.
 
    ```
-   YAMLRPM_VERSION=1.9-13
+   YAMLRPM_VERSION=1.10-1
    ROCKSDEVEL_VERSION=7.1-12
-   RCICMODULE_VERSION=1.1-12
+   RCICMODULE_VERSION=1.2-1
    RCICMODULEPATH_VERSION=1.0-5
    RUAMEL_VERSION=0.16.5-1
    SETUPTOOLS_VERSION=41.0.0-1
