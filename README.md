@@ -24,6 +24,10 @@ wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/rcic-module-
 wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/python-ruamel-yaml-${RUAMEL_VERSION}.x86_64.rpm
 wget https://github.com/RCIC-UCI-Public/development-RPMS/raw/master/python-setuptools-${SETUPTOOLS_VERSION}.noarch.rpm
 yum -y install rocks-devel-${ROCKSDEVEL_VERSION}.x86_64.rpm yaml2rpm-${YAMLRPM_VERSION}.x86_64.rpm rcic-module-support-${RCICMODULE_VERSION}.x86_64.rpm rcic-module-path-${RCICMODULEPATH_VERSION}.x86_64.rpm python-ruamel-yaml-${RUAMEL_VERSION}.x86_64.rpm python-setuptools-${SETUPTOOLS_VERSION}.noarch.rpm zlib-devel redhat-lsb environment-modules
+
+. /etc/profile.d/rocks-devel.sh	
+. /etc/profile.d/yaml2rpm.sh	
+. /etc/profile.d/rcic-modules.sh
  ```
 
 You can then download yaml2rpm based repos and build according to their local 
